@@ -8,8 +8,10 @@ sInstance__13SystemManager = 0x80386000
 RestartGame__13SystemManagerFv = 0x8000b1bc
 RipFromDiscAsync__13SystemManagerFPcPvUiUiPv = 0x8000b308
 
+memcmp = 0x8000f314
 wcstombs = 0x8000f138
 snprintf = 0x80011938
+sprintf = 0x80011a2c
 qsort = 0x80011b00
 rand = 0x80011c70
 srand = 0x80011c90
@@ -918,6 +920,13 @@ Patch_HostHeader = 0x800ed868
 DWC_AuthServer = 0x80386338
 SSL_Initialised = 0x80386d4c
 
+Real_DWCi_Auth_SendRequest = 0x800ed6ec
+s_auth_work = 0x8038633c
+s_auth_error = 0x802f1cB8
+
+NHTTPDestroyResponse__FPv = 0x801d92f8
+NHTTPSendRequestAsync__FPv = 0x801d925c
+NHTTPCreateRequest__FPCciPvUiPvPv = 0x801d8ff8
 
 #Effects#
 Reset__10EffectsMgrFv = 0x8067b8f0
