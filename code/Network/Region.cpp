@@ -11,3 +11,6 @@ kmWrite32(0x80659724, 0x38E0018E);
 kmWrite32(0x80659778, 0x38E0018E);
 kmWrite32(0x8065A034, 0x3880008E);
 kmWrite32(0x8065A080, 0x3880008E);
+
+// Additional patch for WiiLink WFC matching area
+kmWrite32(0x80005EFC, 0x0000018E);
